@@ -1,59 +1,441 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人主页</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; }
-        header, section { margin: 20px; }
-        header { text-align: center; }
-        h1 { font-size: 2em; }
-        .contact-info, .education, .work, .students, .projects, .publications { margin-bottom: 40px; }
-        .contact-info p, .education p, .work p, .students p, .projects p, .publications p { margin: 5px 0; }
-    </style>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="header-image/icon.png" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Resume of XIONG Jie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
 </head>
+
 <body>
+  <div class="wrapper" id="wrapper">
     <header>
-        <h1>姓名</h1>
-        <p>材料科学和机器学习研究者</p>
+      <div class="banner row" id="banner">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadd slides-container" style="height:100%">
+          <div class="slide">
+            <img src="header-image/header-bg1.jpg" width="1024" height="682">
+          </div>
+          <div class="slide">
+            <img src="header-image/header-bg2.jpg" width="1024" height="682">
+          </div>
+          <div class="slide">
+            <img src="header-image/header-bg3.jpg" width="1024" height="682">
+          </div>
+          <div class="slide">
+            <img src="header-image/header-bg4.jpg" width="1024" height="682">
+          </div>
+        </div>
+        <div class="bannerText container">
+          <h1>XIONG Jie</h1>
+          <p>Ph.D. in Mechanical Engineering</p>
+          <a href="#aboutme" class="mbnt">About me</a>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="navbar-wrapper">
+          <div class="container">
+            <div class="navwrapper">
+              <div class="navbar navbar-inverse navbar-static-top">
+                <div class="container">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Guide</a>
+                  </div>
+                  <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav nav-justified">
+                      <li class="first menuItem homeLink active">
+                        <a href="#wrapper">Home Page</a>
+                      </li>
+                      <li class="menuItem">
+                        <a href="#aboutme">About me</a>
+                      </li>
+                      <li class="menuItem">
+                        <a href="#technical">Skills</a>
+                      </li>
+                      <li class="menuItem">
+                        <a href="#exprience">Education</a>
+                      </li>
+                      <li class="menuItem">
+                        <a href="#reffernces">Publications</a>
+                      </li>
+                      <li class="menuItem">
+                        <a href="#contact">Contact me</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
-    
-    <section class="contact-info">
-        <h2>联系方式</h2>
-        <p>Email: your-email@example.com</p>
-        <p>Phone: +86 123 4567 890</p>
+    <section class="aboutme" id="aboutme">
+      <div class="container">
+        <div class="row">
+          <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 aboutCont">
+            <div class="heading clearfix">
+              <h2>About me</h2>
+            </div>
+            <div id="description">
+              <p>
+                A Postdoc researcher from the Department of Materials Science and Engineering, Harbin Institute of Technology, Shenzhen, China 
+              </p>
+              <p>A Fan of FCB, LFC, Lakers, and Dota2</p>
+              <p>
+                I obtained the Bachelor's degree in Materials Science and Engineering from Tianjin University in 2015, the Master's and doctoral degree in Mechanical Engineering from HK PolyU in 2018 and 2021.
+              </p>
+              <p>
+                My research interests include high entropy alloys, high-performance steels, and materials informatics.
+              </p>
+            </div>
+            <a href="https://scholar.google.com.hk/citations?user=jLg5m9UAAAAJ" class="btnDownload">My GoogleScholar</a>
+            <a href="https://www.researchgate.net/profile/Jie_Xiong29" class="btnDownload">My ResearchGate</a>
+            <a href="https://www.linkedin.com/in/jie-xiong-514a57103/" class="btnDownload">My Linkedin</a>
+          </div>
+        </div>
+      </div>
     </section>
-    
-    <section class="education">
-        <h2>教育经历</h2>
-        <p>博士, 材料科学, 北京大学, 2015-2019</p>
-        <p>硕士, 材料科学, 清华大学, 2012-2015</p>
-        <p>学士, 材料科学, 复旦大学, 2008-2012</p>
+    <section class="technical" id="technical">
+      <div class="container">
+        <div class="heading">
+          <h2 id="technical_title">Skills</h2>
+          <p>Materials informatics integrate the materials science domain knowledge and machine learning approaches</p>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+            <div class=" col-xs-12 skills">
+              <span class="chart skilBg" data-percent="90">
+                                <span class="percent"></span>
+              </span>
+              <h4>Chinese</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+            <div class=" col-xs-12 skills">
+              <span class="chart skilBg" data-percent="80">
+                                <span class="percent"></span>
+              </span>
+              <h4>English</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+            <div class=" col-xs-12 skills">
+              <span class="chart skilBg" data-percent="90">
+                                <span class="percent"></span>
+              </span>
+              <h4>Mechanical Properties</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+            <div class=" col-xs-12 skills">
+              <span class="chart skilBg" data-percent="80">
+                                <span class="percent"></span>
+              </span>
+              <h4>Metallography</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+            <div class=" col-xs-12 skills">
+              <span class="chart skilBg" data-percent="85">
+                                <span class="percent"></span>
+              </span>
+              <h4>Failure Analysis</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+            <div class=" col-xs-12 skills">
+              <span class="chart skilBg" data-percent="80">
+                                <span class="percent"></span>
+              </span>
+              <h4>Corrosion Science</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+            <div class=" col-xs-12 skills">
+              <span class="chart skilBg" data-percent="90">
+                                <span class="percent"></span>
+              </span>
+              <h4>X-Ray Diffraction</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+            <div class=" col-xs-12 skills">
+              <span class="chart skilBg" data-percent="90">
+                                <span class="percent"></span>
+              </span>
+              <h4>Differential Scanning Calorimetry</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+            <div class=" col-xs-12 skills">
+              <span class="chart skilBg" data-percent="80">
+                                <span class="percent"></span>
+              </span>
+              <h4>Scanning Electron Microscope</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+            <div class=" col-xs-12 skills">
+              <span class="chart skilBg" data-percent="80">
+                                <span class="percent"></span>
+              </span>
+                <h4>Machine Learning</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+            <div class=" col-xs-12 skills">
+              <span class="chart skilBg" data-percent="70">
+                                <span class="percent"></span>
+              </span>
+              <h4>Deep Learning</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+            <div class=" col-xs-12 skills">
+              <span class="chart skilBg" data-percent="85">
+                                <span class="percent"></span>
+              </span>
+              <h4>Academic writing</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+            <div class=" col-xs-12 skills">
+              <span class="chart skilBg" data-percent="80">
+                                <span class="percent"></span>
+              </span>
+              <h4>Academic presentation</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+            <div class=" col-xs-12 skills">
+              <span class="chart skilBg" data-percent="75">
+                                <span class="percent"></span>
+              </span>
+              <h4>Photoshop</h4>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
-    <section class="work">
-        <h2>工作经历</h2>
-        <p>副教授, 某某大学, 2020-至今</p>
-        <p>研究员, 某某研究所, 2019-2020</p>
+    <section class="exprience" id="exprience">
+      <div class="container">
+        <div class="heading">
+          <h2>Education</h2>
+          <p></p>
+        </div>
+        <div class="row workDetails">
+          <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+            <div class="workYear">
+              <span class="prevY">09,2011</span>
+              <span class="afterY">07,2015</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+            <div class="arrowpart"></div>
+            <div class="exCon">
+              <h4>Tianjin University, Qiushi Honors Colloege</h4>
+              <h5>Bachelor of Engineering on Materials Science and Engineering</h5>
+              <p>Graduated with an overall GPA of 82/100, the thesis Effects of Aging on Diffusion-bonded Joint of Reduced Activated Ferretic Steels was awarded as the distinguish undergraduated thesis of Tianjin University</p>
+            </div>
+          </div>
+        </div>
+        <div class="row workDetails">
+          <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+            <div class="workYear">
+              <span class="prevY">09,2016</span>
+              <span class="afterY">08,2018</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+            <div class="arrowpart"></div>
+            <div class="exCon">
+              <h4>Hong Kong Polytechnic University</h4>
+              <h5>Master of Science in Mechanical Engineering</h5>
+              <p>Graduated with an overall GPA of 3.60/4.00, the thesis Machine Learning Approach for Predicting the Elastic Properties and Glass Forming Ability of Metallic Glasses was supervised by <a href="https://www.polyu.edu.hk/me/people/academic-teaching-staff/shi-san-qiang-prof/">Prof Shi San-Qiang</a> and <a href="https://www.polyu.edu.hk/me/people/emeritus-visiting-adjunct-staff/zhang-tong-yi-prof/">Prof Zhang Tong-Yi</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="row workDetails">
+          <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+            <div class="workYear">
+              <span class="prevY">09,2018</span>
+              <span class="afterY">05,2021</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+            <div class="arrowpart"></div>
+            <div class="exCon">
+              <h4>Hong Kong Polytechnic University</h4>
+              <h5>Doctor of Philosophy in Mechanical Engineering</h5>
+              <p>Graduated with an overall GPA of 3.70/4.00, the thesis Materials Informatics and Its Application to Metallic Materials Design and Discovery was supervised by <a href="https://www.polyu.edu.hk/me/people/academic-teaching-staff/shi-san-qiang-prof/">Prof Shi San-Qiang</a> and <a href="https://www.polyu.edu.hk/me/people/emeritus-visiting-adjunct-staff/zhang-tong-yi-prof/">Prof Zhang Tong-Yi</a></p>
+            </div>
+          </div>
+        </div>
     </section>
-    
-    <section class="students">
-        <h2>指导学生</h2>
-        <p>张三, 硕士, 机器学习在材料科学中的应用, 2022-至今</p>
-        <p>李四, 博士, 新型材料的开发与研究, 2020-至今</p>
+    <section class="reffernces" id="reffernces">
+      <div class="container">
+        <div class="heading">
+          <h2>Publications</h2>
+          <p>Presentations and Accpted Publications</p>
+        </div>
+        <div class="row waterfall" data-col-min-width="300">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 refBox">
+            <div class="refBoxcon">
+              <p>
+                J. Xiong, Q. Cai, Z. Q. Ma, L. M. Yu, Y. C. Liu Enhancement of Critical Current Density in MgB 2 Bulk with CNT-coated Al Addition. Journal of Superconductivity and Novel Magnetism 27 (2014) 1659-1664.
+              </p>
+              <h3>
+                            <a href="https://en.cnki.com.cn/Article_en/CJFDTotal-GWRC201505016.htm">Superconductor</a>
+                            </h3>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 refBox">
+            <div class="refBoxcon">
+              <p>
+                J. XIONG, C. X. Liu, Change Rule on Structure of Diffusion Bonding Joint for CLAM Steel after High Temperature Aging. Heat Treatment Technology and Equipment. 5 (2015). 
+              </p>
+              <h3>
+                            <a href="https://www.researchgate.net/publication/271740071_Enhancement_of_Critical_Current_Density_in_MgB2_Bulk_with_CNT-coated_Al_Addition">Steels</a>
+                            </h3>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 refBox">
+            <div class="refBoxcon">
+              <p>
+                J. Xiong, T. Y. Zhang, S. Q. Shi, Machine learning prediction of elastic properties and glass-forming ability of bulk metallic glasses. MRS Communications. 9 (2019) 576–585.
+              </p>
+              <h3>
+                            <a href="https://www.cambridge.org/core/journals/mrs-communications/article/machine-learning-prediction-of-elastic-properties-and-glassforming-ability-of-bulk-metallic-glasses/040053DBC89F84F5E4A5D27BFFF32247">Bulk Metallic Glass</a>
+                            </h3>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 refBox">
+            <div class="refBoxcon">
+              <p>
+                J. Xiong, T. Y. Zhang, S. Q. Shi, Machine learning of mechanical properties of steels. Science China Technological Sciences. 63 (2020) 1247–1255.
+              </p>
+              <h3>
+                            <a href="https://engine.scichina.com/publisher/scp/journal/SCTS/63/7/10.1007/s11431-020-1599-5?slug=fulltext">Steels</a>
+                            </h3>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 refBox">
+            <div class="refBoxcon">
+              <p>
+                J. Xiong, S. Q. Shi, T. Y. Zhang, A machine-learning approach to predicting and understanding the properties of amorphous metallic alloys. Materials and Design. 187 (2020) 108378.
+              </p>
+              <h3>
+                            <a href="https://www.sciencedirect.com/science/article/pii/S0264127519308160">Metallic Glasses</a>
+                            </h3>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 refBox">
+            <div class="refBoxcon">
+              <p>
+                A. R. Wei, J. Xiong, W. D. Yang, F. L. Guo, Identifying the elastic isotropy of architecture materials based on deep learning method. Extreme Mechanics Letters. 43 (2021) 101173.
+              </p>
+              <h3>
+                            <a href="https://www.sciencedirect.com/science/article/pii/S2352431621000055">Architected Materials</a>
+                            </h3>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 refBox">
+            <div class="refBoxcon">
+              <p>
+                J. Xiong, S. Q. Shi, T. Y. Zhang, Machine Learning of Phases and Mechanical Properties in Complex Concentrated Alloys. Journal of Materials Science  & Technology. 87 (2021) 133-142.
+              </p>
+              <h3>
+                            <a href="https://www.sciencedirect.com/science/article/pii/S1005030221002073">High Entropy Alloys</a>
+                            </h3>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 refBox">
+            <div class="refBoxcon">
+              <p>
+                J. Xiong, S. Q. Shi, T. Y. Zhang, Machine learning prediction of glass-forming ability in bulk metallic glasses. Computational Materials Science. 192 (2021) 110362.
+              </p>
+              <h3>
+                            <a href="https://www.sciencedirect.com/science/article/pii/S0927025621000872">Bulk Metallic Glasses</a>
+                            </h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
-    <section class="projects">
-        <h2>科研项目</h2>
-        <p>项目1: 高性能材料的开发, 2021-2024</p>
-        <p>项目2: 机器学习在材料科学中的应用, 2019-2022</p>
+    <section class="contact" id="contact">
+      <div class="container topCon">
+        <div class="heading">
+          <h2>Contact me</h2>
+        </div>
+      </div>
     </section>
-    
-    <section class="publications">
-        <h2>发表文章</h2>
-        <p>文章1: 《高性能材料的研究》, 杂志名称, 2023</p>
-        <p>文章2: 《机器学习在材料科学中的应用》, 杂志名称, 2022</p>
+    <section class="contactDetails">
+      <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h4>Contact me</h4>
+          <p> <i class="icon icon-envelope"></i><a href="mailto:george-jie.xiong@connect.polyu.hk">george-jie.xiong@connect.polyu.hk</a></p>
+        </div>
+      </div>
     </section>
+    <section class="footer" id="footer">
+      <div class="container">
+        <ul>
+          <li><a href="https://github.com/George-JieXIONG"><i class="icon icon-github icon-2x"></i></a>
+          </li>
+        </ul>
+        <span class="totop"><i class="icon icon-chevron-up"></i>
+                </span>
+      </div>
+    </section>
+  </div>
+  <script src="./js/jquery-2.1.4.min.js"></script>
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/jquery.waterfall.js"></script>
+  <script src="./js/stickUp.js"></script>
+  <script type="text/javascript">
+  jQuery(function($) {
+    $(document).ready(function() {
+      //enabling stickUp on the '.navbar-wrapper' class
+
+      $('.navbar-wrapper').stickUp({
+        parts: {
+          0: 'wrapper',
+          1: 'aboutme',
+          2: 'technical',
+          3: 'exprience',
+          4: 'reffernces',
+          5: 'contact'
+        },
+        itemClass: 'menuItem',
+        itemHover: 'active',
+        topMargin: 'auto'
+      });
+    });
+  });
+
+  </script>
+  <script src="./js/jquery.superslides.js"></script>
+  <script src="./js/jquery.easing.min.js"></script>
+  <script src="./js/custom.js"></script>
+  <script src="js/jquery.easypiechart.js"></script>
 </body>
+
 </html>
